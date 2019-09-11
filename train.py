@@ -103,7 +103,7 @@ if __name__ == '__main__':
         loss_plot.append(epoch_loss.avg)
         psnr_plot.append(epoch_PSNR.avg)
 
-    # torch.save(best_weights, 'best_path.pth')
+    torch.save(best_weights, 'best_path.pth')
     print('best PSNR: {:.2f}'.format(best_PSNR), 'best epoch: {}'.format(best_epoch))
 
     fig = plt.figure()
